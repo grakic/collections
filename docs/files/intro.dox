@@ -1,0 +1,21 @@
+/*! \page Uvod
+
+# Dobrodošli ♫
+
+Čitate dokumentaciju malenog demo projekta pod imenom "devbase/collections". To je simpatična
+komponentna PHP biblioteka za rad sa kolekcijama podataka.
+
+Kolekcija podataka je običan niz ili bilo koji drugi objekat koji implementira makar ::Traversable
+interfejs za obilazak elemenata u kolekciji.
+
+Projekat promoviše objektno orijentisan kod koji zavisi od definisanih interfejsa, upotrebu 
+[composera](http://getcomposer.org/) za upravljanje zavinostima i autoloader implementaciju,
+[phpunit](http://phpunit.de) za unit testiranje koda i [doxygen](http://www.stack.nl/~dimitri/doxygen/)
+za generisanje ove dokumentacije koju sada čitate.
+
+Izvorni kod je objavljen u git skladištu [grakic/composer](https://github.com/grakic/collections) na
+GitHubu. Ovo je slobodan softver objavljen pod uslovima 
+[GNU Lesser General Public License v3.0](http://www.gnu.org/licenses/lgpl-3.0-standalone.html) ili,
+prema vašem nahođenju, bilo kog novijeg izdanja ove licence.
+
+*/
