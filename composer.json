@@ -1,0 +1,23 @@
+{
+    "name": "devbase/collections",
+    "description": "Collections",
+    "homepage": "http://devbase.net/collections",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Goran Rakic",
+            "email": "grakic@devbase.net"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Devbase": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
