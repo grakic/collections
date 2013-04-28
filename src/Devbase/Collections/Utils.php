@@ -1,3 +1,5 @@
+<?php
+
 namespace Devbase\Collections;
 
 class Utils
@@ -17,12 +19,12 @@ class Utils
      */
     public static function getIterator($collection)
     {
-        if(is_array($object)
+        if(is_array($collection))
             return new \ArrayIterator($collection);
-        elseif($object instanceof \Traversable)
-            return $object;
+        elseif($collection instanceof \Traversable)
+            return $collection;
         else
-            throw new \DomainException('No known iterator for the collection');
+            throw new \DomainException('No known iterator for the collection of type '.get_class($collection));
     }
 
     /**

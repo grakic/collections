@@ -9,5 +9,4 @@ if (!is_file($autoloadFile)) {
     exit(1);
 }
 
-$loader = require $autoloadFile;
-$loader->add('Devbase', __DIR__);
+require $autoloadFile;

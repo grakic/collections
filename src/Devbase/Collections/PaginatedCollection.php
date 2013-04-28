@@ -55,7 +55,7 @@ class PaginatedCollection implements \OuterIterator, Collection
      */
     public function __construct($collection, $page = 1, $items_per_page = 10)
     {
-        $this->collection = Utils::ensureIterator($collection);
+        $this->collection = Utils::getIterator($collection);
         $this->items_per_page = $items_per_page;
 
         $this->setPage($page);
@@ -68,7 +68,7 @@ class PaginatedCollection implements \OuterIterator, Collection
 
     private function setPageInBounds($page)
     {
-        if(($pages = $this->getPages()) >= 0) {
+        if(($pages = $this->countPages()) >= 0) {
             $page = min($page, $pages);
         }
 
@@ -85,29 +85,16 @@ class PaginatedCollection implements \OuterIterator, Collection
         /* HACK: Ensure the current page items are loaded */
         if($this->collection instanceof LazyCollection) {
 
-            $count = $this->getCount();
+            $count = $this->count();
             $this->collection->fetch($this->offset, $this->items_per_page);
 
             /* We may know a new count now, adjust */
-            if($this->getCount() != $count) {
+            if($this->count() != $count) {
                 $this->setPageInBounds($page);
             }
         }
 
         $this->iterator = new \LimitIterator($this->collection, $this->offset, $this->items_per_page);
-    }
-
-    public function getPages()
-    {
-        if(($count = $this->getCount()) >= 0) {
-            return ceil($count/$this->items_per_page);
-        }
-        else return -1;
-    }
-
-    public function getPageOffset()
-    {
-        return $this->offset;
     }
 
     public function current() { return $this->iterator->current(); }
@@ -116,14 +103,14 @@ class PaginatedCollection implements \OuterIterator, Collection
     public function rewind()  { return $this->iterator->rewind();  }
     public function valid()   { return $this->iterator->valid();   }
 
-    public function getCount()
+    public function count()
     {
         return count($this->collection);
     }
 
-    public function getPageCount()
+    public function countOnPage()
     {
-        $count = $this->getCount();
+        $count = $this->count();
         if($count < 0) {
             /* Total unknown, we probaly do have a page */
             return $this->items_per_page;
@@ -133,9 +120,22 @@ class PaginatedCollection implements \OuterIterator, Collection
         }
     }
 
+    public function countPages()
+    {
+        if(($count = $this->count()) >= 0) {
+            return ceil($count/$this->items_per_page);
+        }
+        else return -1;
+    }
+
     public function getPage()
     {
         return $this->page;
+    }
+
+    public function getPageOffset()
+    {
+        return $this->offset;
     }
 
     public function offsetSet($index, $value)
