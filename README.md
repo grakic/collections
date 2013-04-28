@@ -1,3 +1,7 @@
+# Napomena
+
+Radovi u toku. Vratite se za dan, dva :)
+
 # devbase/collections
 
 PHP biblioteka za rad sa kolekcijama. Bolji opis čeka vredne neimare :)
