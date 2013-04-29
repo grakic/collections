@@ -1,5 +1,5 @@
-div.header, div.contents {
-    max-width: 960px;
+div.contents {
+    max-width: 860px;
 }
 
 div.contents {
@@ -12,7 +12,8 @@ body, table, div, p, dl {
 
 div.toolbar,  #nav-sync,
 #nav-tree-contents > ul:last-of-type, 
-#nav-tree-contents> ul> li> .item {
+#nav-tree-contents> ul> li> .item,
+div.directory .levels {
     display: none !important;
 }
 
@@ -81,10 +82,6 @@ div.toolbar,  #nav-sync,
     opacity: 0.6 !important;
 }
 
-h2.groupheader {
-    font-size: 120%;
-}
-
 .paramtype {
     text-align: right;
 }
@@ -133,7 +130,7 @@ dl.deprecated, dl.todo, dl.todo a {
 }
 
 #projectname {
-    font: 200% Tahoma, Arial, sans-serif;
+    font: 200% Roboto, sans-serif;
 }
 
 div.fragment {
@@ -145,6 +142,51 @@ div.fragment {
 
 div.fragment pre {
     margin: 0;
+}
+
+.memberdecls .memSeparator {
+    border: none;
+    line-height: 4px;
+}
+
+.memberdecls tr:nth-child(4n-2) > td {
+    background-color: #fcfbf9;
+}
+
+h2.groupheader {
+    border: none;
+    padding-bottom: 0px;
+}
+
+tr.heading h2.groupheader {
+    padding-bottom: 8px;
+}
+
+.params .paramtype {
+    font-style: normal;
+}
+
+pre, code, .memItemLeft, .memItemRight, .memname, .params .paramtype {
+    font-family: PragmataPro, monospace;
+}
+
+div.directory {
+    border: 0;
+    margin-top: 20px;
+}
+
+div.directory tr {
+    background-color: #f9fafc;
+}
+
+div.directory tr.even {
+    background-color: #fcfbf9;
+    border: 4px solid white;
+}
+
+div.directory td.desc {
+    border: 0;
+    padding-left: 14px;
 }
 
 @media print

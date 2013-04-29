@@ -19,6 +19,7 @@ $extrastylesheet
 <script src="$relpath^highlight.pack.js"></script>
 <script type="text/javascript">
     $(function() {
+        // Handle PHP arrays notation
         var html = $("body").html();
         var re = /array((_by_[^\s_&]+)+)\s*(<[^>]+>|&nbsp;\|&nbsp;)?([^\s<&]+)/g;
         while(match = re.exec(html)) {
@@ -28,6 +29,19 @@ $extrastylesheet
         }
         $("body").html(html);
 
+        // Workaround some errors in Doxygen resize.js
+        function fixresizebug() {
+            $("#doc-content").css("margin-left", $("#side-nav").outerWidth()+"px");
+        }
+        initResizable();
+        fixresizebug();
+        $(window).resize(function() {
+            resizeWidth();
+            resizeHeight();
+            fixresizebug();   
+        });
+
+        // Replace Doxygen highlight with highlight.js
         $(".fragment").each(function(i,node) { 
             var $node = $(node); 
             $node.html("<pre><code class='"+$node.attr("class")+"'>"+$node.text()+"</code></pre>");
