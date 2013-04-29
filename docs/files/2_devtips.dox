@@ -1,0 +1,14 @@
+/*! \page Devtips Programerski saveti
+
+Mali trikovi za PHP programere. Inspirisano izlaganjem na prvom okupljanju PHP Srbija zajednice.
+
+- \subpage Devtips_Component
+- \subpage Devtips_Interface
+- \subpage Devtips_Composer
+- \subpage Devtips_PHPUnit
+- \subpage Devtips_Doxygen
+- \subpage Devtips_Git
+- \subpage Devtips_Resources
+
+*/
+

@@ -1,0 +1,10 @@
+/*! \page Devtips_Resources Resursi
+
+Vodič [PHP The Right Way](http://www.phptherightway.com) pokazuje dobru praksu u razvoju PHP veb aplikacija. Korisnih informacija
+ima i po dubini prateći linkove iz glavnog teksta. Ako želite da doprinesete tekstu, projekat je na [GitHubu](https://github.com/codeguy/php-the-right-way).
+
+Zvanični [PHP priručnik](http://php.net/manual/sr/index.php) je dostupan i na srpskom jeziku.
+Za prevod je zaslužan [Nikola Smolenski](http://sr.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0_%D0%A1%D0%BC%D0%BE%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8).
+
+*/
+

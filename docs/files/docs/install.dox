@@ -1,0 +1,30 @@
+/*! \page Docs_Install Instalacija
+
+Biblioteka definiše composer.json tako da je lako možete dodati među zavisnosti nekog svog projekta.
+Objavljena je u [Packagist](https://packagist.org/) skladištu pa ne morate ručno dodavati GitHub
+repozitorijum. Sve je automagično.
+
+U svom projektu napravite datoteku composer.json i u nju upišite sledeće. Ako već koristite composer,
+dodajte biblioteku kao novu zavisnost.
+
+```
+{
+    "require": {
+        "devbase/collections": "dev-master"
+    }
+}
+```
+
+Instalirajte [Composer](http://getcomposer.org) i dovucite zavisnosti:
+```php composer.phar install```
+
+Biblioteka prati [PSR-0 standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md),
+a Composer će obezbediti implementaciju za autoloader. 
+
+Ako ne koristite Composer autoloader, a želite to, dovoljno je da u svom PHP kodu pre korišćenja bilo koje
+komponente instalirane kroz Composer dodate:
+```require 'vendor/autoload.php';```
+
+Više informacija na sajtu [Packagista](https://packagist.org/).
+
+*/

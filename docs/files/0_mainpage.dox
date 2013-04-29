@@ -1,6 +1,6 @@
-/*! \page Uvod
+/*! \mainpage Početna strana
 
-# Dobrodošli ♫
+# Dobro došli ♫
 
 Čitate dokumentaciju malenog demo projekta pod imenom "devbase/collections". To je simpatična
 komponentna PHP biblioteka za rad sa kolekcijama podataka.
@@ -13,7 +13,7 @@ Projekat promoviše objektno orijentisan kod koji zavisi od definisanih interfej
 [phpunit](http://phpunit.de) za unit testiranje koda i [doxygen](http://www.stack.nl/~dimitri/doxygen/)
 za generisanje ove dokumentacije koju sada čitate.
 
-Izvorni kod je objavljen u git skladištu [grakic/composer](https://github.com/grakic/collections) na
+Izvorni kod je objavljen u git skladištu [grakic/collections](https://github.com/grakic/collections) na
 GitHubu. Ovo je slobodan softver objavljen pod uslovima 
 [GNU Lesser General Public License v3.0](http://www.gnu.org/licenses/lgpl-3.0-standalone.html) ili,
 prema vašem nahođenju, bilo kog novijeg izdanja ove licence.

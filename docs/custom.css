@@ -1,0 +1,164 @@
+.memdoc, .textblock {
+    padding-left: 30px !important;
+}
+
+.textblock kbd {
+    white-space: nowrap;
+}
+
+.memdoc p, .textblock p {
+    max-width: 730px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.ingroups .el {
+    background: #3D578C;
+    border: 1px solid #3D578C;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+}
+
+.ingroups {
+    margin-top: 15px;
+}
+
+.headertitle + .ingroups {
+    margin-top: 0px;
+    padding-left: 14px;
+    height: 30px;
+}
+
+.mdescRight p {
+    margin-top: 0px;
+}
+
+.contents ul li {
+    padding: 2px;
+}
+
+.contents img {
+    max-height: 300px;
+    max-width: 1000px;    
+}
+
+.textblock *+h2 {
+	margin-top: 50px;
+}
+
+#nav-tree-contents> ul> li> .item {
+	display: none;
+}
+
+#nav-tree-contents> ul> li {
+	margin-left: -10px;
+}
+
+.tablist li {
+	line-height: 26px !important;
+}
+
+.tabs2 .tablist li, .tabs3 .tablist li {
+	line-height: 20px !important;
+}
+
+#navrow2 {
+	opacity: 0.8 !important;
+}
+
+#navrow3 {
+	opacity: 0.7 !important;
+}
+
+#navrow4 {
+	opacity: 0.6 !important;
+}
+
+body, table, div, p, dl {
+	line-height: 1.5;
+}
+
+h2.groupheader {
+	font-size: 120%;
+}
+
+div.contents {
+	margin-left: 8px;
+}
+
+.mdescLeft, .mdescRight,
+.memItemLeft, .memItemRight,
+.memTemplItemLeft, .memTemplItemRight, .memTemplParams {
+	padding: 5px 0;
+}
+
+.memItemLeft, .memItemRight, .memTemplParams {
+	border-top: 1px solid #C4CFE5;
+}
+
+.memTemplParams {
+        font-size: 100%;
+}
+
+.memname {
+        white-space: nowrap;
+}
+
+.paramtype {
+	text-align:right;
+}
+
+.params, .retval, .exception, .tparams {
+        border-spacing: 6px 2px;
+}  
+
+.ftvtree {
+	margin: 0px;
+}
+
+table.doxtable th {
+	text-align:left;
+}
+
+table.fieldtable, .fieldtable td.fielddoc {
+        width: 100%;
+}
+
+div.ingroups {
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+div.headertitle {
+	padding: 5px 5px 5px 7px;
+}
+
+dl.note, dl.warning, dl.attention, dl.pre, dl.post, dl.invariant, dl.deprecated, dl.todo, dl.test, dl.bug
+{
+        border-left:4px solid;
+        padding: 0 0 0 6px;
+}
+
+#projectlogo img { 
+	height: 50px;
+}
+
+#projectname {
+	font: 200% Tahoma, Arial,sans-serif;
+}
+
+@media print
+{
+  pre.fragment {
+    overflow: visible;
+    text-wrap: unrestricted;
+    white-space: -moz-pre-wrap; /* Moz */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: pre-wrap; /* CSS3  */
+    word-wrap: break-word; /* IE 5.5+ */
+  }
+}
+
