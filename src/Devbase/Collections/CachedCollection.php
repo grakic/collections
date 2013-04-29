@@ -1,6 +1,6 @@
 <?php
 
-namespace Devbase\Collection;
+namespace Devbase\Collections;
 
 abstract class CachedCollection implements \ArrayAccess, \Iterator, \Countable, LazyCollection
 {
