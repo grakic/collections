@@ -10,6 +10,10 @@ body, table, div, p, dl {
     line-height: 1.5;
 }
 
+dd {
+    margin-left: 10px;
+}
+
 div.toolbar,  #nav-sync,
 #nav-tree-contents > ul:last-of-type, 
 #nav-tree-contents> ul> li> .item,
