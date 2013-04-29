@@ -20,8 +20,10 @@ Preporučena instalacija je preko [composera](http://getcomposer.org). Dodajte u
 
 ## Dokumentacija
 
-Generišite HTML dokumentaciju naredbom [doxygen](http://www.doxygen.org) u direktorijumu docs. Otvorite
-docs/docs/index.html u veb pregledaču.
+Pogledajte generisanu [dokumentaciju na sajtu](http://devbase.net/collections/).
+
+HTML dokumentacija se generiše naredbom [doxygen](http://www.doxygen.org) u direktorijumu docs/.
+Otvorite docs/docs/html/index.html u veb pregledaču.
 
 ## Testovi
 
