@@ -10,24 +10,13 @@
 <link href="$relpath^tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="$relpath^jquery.js"></script>
 <script type="text/javascript" src="$relpath^dynsections.js"></script>
+<link href="$relpath^$stylesheet" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="$relpath^solarized_light.css">
 $treeview
 $search
 $mathjax
-<link href="$relpath^$stylesheet" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="$relpath$shCore.js"></script>
-<script type="text/javascript" src="$relpath$shBrushPhp.js"></script>
-<script type="text/javascript" src="$relpath$shBrushXml.js"></script>
-<link rel="stylesheet" type="text/css" href="$relpath$shCore.css" />
-<link rel="stylesheet" type="text/css" href="$relpath$shThemeDefault.css" />
 $extrastylesheet
-<style>
-.syntaxhighlighter {
-    overflow: visible !important;
-}
-div.toolbar, #nav-sync, #nav-tree-contents > ul:last-of-type {
-    display: none !important;
-}
-</style>
+<script src="$relpath^highlight.pack.js"></script>
 <script type="text/javascript">
     $(function() {
         var html = $("body").html();
@@ -39,25 +28,13 @@ div.toolbar, #nav-sync, #nav-tree-contents > ul:last-of-type {
         }
         $("body").html(html);
 
-        $("pre.fragment", "div.textblock").each(function(i, node) { 
-            var $node = $(node);
-            var html = $node.html();            
-            html.replace('/</g', '&lt');
-            
-            var match = html.match(/brush:\s+([^\s]+)/);
-            if(match) {
-                html = html.replace(match[0], '');
-                $node.addClass("brush: "+match[1]);                
-            } else {
-                $node.addClass("brush: php");
-            }
-            
-            $node.html(html);            
+        $(".fragment").each(function(i,node) { 
+            var $node = $(node); 
+            $node.html("<pre><code class='"+$node.attr("class")+"'>"+$node.text()+"</code></pre>");
+            hljs.highlightBlock(node);
         });
-        
-        $("p + br", ".mdescRight").remove()
 
-        SyntaxHighlighter.all()
+        $("p + br", ".mdescRight").remove()
     });
 </script>
 
