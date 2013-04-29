@@ -1,5 +1,7 @@
 /*! \page Devtips_Doxygen Doxygen dokumentacija
 
+\warning Doxygen u PHP režimu zahteva da sav kod bude u okviru klasa i funkcija. PHP skriptove treba isključiti iz obrade.
+
 \todo Dokumentacija: Dopuni Doxygen input filter tako da podrži vaarg funkciju (ako je ... u @@param
 anotaciji i poslednje je u komentaru, premesti ga u prototip funkcije).
 

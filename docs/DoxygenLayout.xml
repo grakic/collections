@@ -2,7 +2,6 @@
   <!-- Navigation index tabs for HTML output -->
   <navindex>
     <tab type="mainpage" visible="yes" title="Početna stranica"/>
-    <tab type="pages" visible="yes" title="Dokumentacija" intro=""/>
     <tab type="modules" visible="no" title="Komponente" intro="Klase i funkcije su organizovane u komponente koje se mogu i nezavisno koristiti. Sledeće stranice prikazuju ulogu svake od komponenti u sistemu i pružaju uvid u detaljnu dokumentaciju svih pojedinačnih klasa i funkcija."/>
     <tab type="namespaces" visible="yes" title="" intro="">
       <tab type="namespacelist" visible="yes" title="" intro=""/>
@@ -14,6 +13,7 @@
       <tab type="classindex" visible="no" title=""/> 
       <tab type="classmembers" visible="no" title="" intro=""/>
     </tab>
+    <tab type="pages" visible="yes" title="Dokumentacija" intro=""/>
     <tab type="files" visible="no" title="">
       <tab type="filelist" visible="no" title="" intro=""/>
       <tab type="globals" visible="no" title="" intro=""/>

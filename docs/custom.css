@@ -141,6 +141,18 @@ dl.note, dl.warning, dl.attention, dl.pre, dl.post, dl.invariant, dl.deprecated,
         padding: 0 0 0 6px;
 }
 
+dl.warning, dl.bug {
+	color: #dc322f;
+}
+
+dl.attention {
+	color: #b58900;
+}
+
+dl.deprecated, dl.todo, dl.todo a {
+	color: #93a1a1;
+}
+
 #projectlogo img { 
 	height: 50px;
 }
